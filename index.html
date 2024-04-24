@@ -1,1 +1,32 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>War Card Game</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+      <h1>War Card Game</h1>
+      <div class="scoreboard">
+        <h2>scoreboard</h2>
+        <div id="human-score" class="score">Human: 0</div>
+        <div id="computer-score" class="score">Computer: 0</div>
+      </div>
+      <div class="game-area">
+        <div id="human" class="player">
+          <h3>Human</h3>
+          <div id="human-card" class="card"></div>
+        </div>
+        <div id="computer" class="player">
+          <h4>Computer</h4>
+          <div id="computer-card" class="card"></div>
+        </div>
+      </div>
+      <div id="result"></div>
+      <button id="start-btn" class="btn">Start Game</button>
+    </div>
+  <script src="index.js"></script>
+</body>
+</html>

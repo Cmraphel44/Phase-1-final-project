@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #696969;
+  }
+  
+  .container {
+    margin: auto;
+    width: 75%;
+    height: 100%;
+    border: solid gold;
+    border-style: outset;
+    border-radius: 10px;
+    border-width: 5px;
+    padding: 5px;
+    background: #1f242d;
+  }
+  
+  h1 {
+    color: transparent;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px gold;
+  }
+
+  .scoreboard {
+    border: solid gold;
+    border-style: outset;
+    border-radius: 10px;
+    border-width: 2px;
+    padding: 2px;
+    margin-left: 75%;
+    margin-right: 25px;
+
+  }
+
+  h2 {
+    color: transparent;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    -webkit-text-stroke: .5px gold;
+  }
+
+  #human-score {
+    color: greenyellow;
+    font-style: helvetica;
+
+ }
+
+  #computer-score {
+    color: orange;
+    font-size: helvetica;
+
+
+  }
+
+  #human {
+    color: greenyellow;;
+    font-size: 20px;
+    margin-left: 250px;
+  }
+
+  #computer {
+    color: orange;
+    font-size: 20px;
+  }
+  
+  .player {
+    display: inline-block;
+    justify-content: center;
+    margin: 50px;
+    font-family: monospace;
+
+  }
+
+  .card {
+    width: 175px;
+    height: 250px;
+    border: 2px solid #ede8e8;
+    display: flex;
+    justify-content: center;
+    border: solid gold;
+    border-style: outset;
+    border-radius: 10px;
+    border-width: 5px; 
+    padding: 2px;
+  }
+  
+  .btn {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 430px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #e0060a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  #result {
+    margin-left: 800px;
+    color: gold;
+    font-size: 20px;
+    
+  }
