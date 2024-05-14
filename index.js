@@ -43,6 +43,14 @@ function startGame() {
 
 let winners = [];
 
+function getValue(cardValue) {
+  if (cardValue === 'KING') return 13;
+  if (cardValue === 'QUEEN') return 12;
+  if (cardValue === 'JACK') return 11;
+  if (cardValue === 'ACE') return 14;
+  return parseInt(cardValue);
+}
+
 function checkWinner(card1, card2) {
   const humanValue = getValue(card1.value);
   const computerValue = getValue(card2.value);
@@ -100,15 +108,6 @@ function updateScores(winnersArray) {
   })
 }
 
-function getValue(cardValue) {
-  if (cardValue === 'KING') return 13;
-  if (cardValue === 'QUEEN') return 12;
-  if (cardValue === 'JACK') return 11;
-  if (cardValue === 'ACE') return 14;
-  return parseInt(cardValue);
-}
-
-
 document.addEventListener("keydown", function() {
   humanScoreElement.textContent = 'Good Guy';
 });
@@ -126,5 +125,4 @@ startButton.addEventListener("mouseout", function(event) {
 });
 
 
-//for my array iteration I want to take each winner element in an array
 
